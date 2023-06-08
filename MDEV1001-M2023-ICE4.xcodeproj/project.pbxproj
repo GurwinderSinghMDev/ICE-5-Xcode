@@ -16,6 +16,7 @@
 		2A58A29D2A27E8AC008448B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A58A29B2A27E8AC008448B6 /* LaunchScreen.storyboard */; };
 		2A58A2A52A27EC98008448B6 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A58A2A42A27EC98008448B6 /* movies.json */; };
 		2A58A2A72A27F41F008448B6 /* DataSeedar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A58A2A62A27F41F008448B6 /* DataSeedar.swift */; };
+		2AC7873A2A32496400348C41 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC787392A32496400348C41 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2A58A29E2A27E8AC008448B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A58A2A42A27EC98008448B6 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = movies.json; path = ../../../movies.json; sourceTree = "<group>"; };
 		2A58A2A62A27F41F008448B6 /* DataSeedar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSeedar.swift; sourceTree = "<group>"; };
+		2AC787392A32496400348C41 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				2A58A29E2A27E8AC008448B6 /* Info.plist */,
 				2A58A2962A27E8AB008448B6 /* MDEV1001_M2023_ICE4.xcdatamodeld */,
 				2A58A2A62A27F41F008448B6 /* DataSeedar.swift */,
+				2AC787392A32496400348C41 /* MovieTableViewCell.swift */,
 			);
 			path = "MDEV1001-M2023-ICE4";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				2A58A2922A27E8AB008448B6 /* DataViewController.swift in Sources */,
 				2A58A28E2A27E8AB008448B6 /* AppDelegate.swift in Sources */,
+				2AC7873A2A32496400348C41 /* MovieTableViewCell.swift in Sources */,
 				2A58A2982A27E8AB008448B6 /* MDEV1001_M2023_ICE4.xcdatamodeld in Sources */,
 				2A58A2902A27E8AB008448B6 /* SceneDelegate.swift in Sources */,
 				2A58A2A72A27F41F008448B6 /* DataSeedar.swift in Sources */,
