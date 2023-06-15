@@ -1,9 +1,3 @@
-//
-//  DataSeedar.swift
-//  MDEV1001-M2023-ICE4
-//
-//  Created by Gurwinder Singh on 2023-05-31.
-//
 import Foundation
 import UIKit
 import CoreData
@@ -45,7 +39,7 @@ func seedData() {
         movie.length = jsonObject["length"] as? Int16 ?? 0
         movie.shortdescription = jsonObject["shortDescription"] as? String
         movie.mparating = jsonObject["mpaRating"] as? String
-        movie.criticsrating = jsonObject["criticsRating"] as? Float ?? 0.0
+        movie.criticsrating = jsonObject["criticsRating"] as? Double ?? 0.0
         
         // Save the context after each movie is created
         do {
@@ -57,4 +51,24 @@ func seedData() {
     
     print("Data seeded successfully.")
 }
-    
+
+func deleteAllData() {
+    let persistentContainer = NSPersistentContainer(name: "MDEV1001_M2023_ICE6")
+    persistentContainer.loadPersistentStores { _, error in
+        guard error == nil else {
+            print("Failed to load persistent stores: \(error!)")
+            return
+        }
+        let context = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Movie")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+            print("All data deleted successfully.")
+        } catch {
+            print("Failed to delete all data: \(error)")
+        }
+    }
+}

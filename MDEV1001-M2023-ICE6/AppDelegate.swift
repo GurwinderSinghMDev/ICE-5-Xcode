@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MDEV1001-M2023-ICE4
+//  MDEV1001-M2023-ICE6
 //
 //  Created by Gurwinder Singh on 2023-05-31.
 //
@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
     
-          // seedData()
+           seedData()
+        
+     //   deleteAllData()
         return true
     }
 
@@ -43,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "MDEV1001_M2023_ICE4")
+        let container = NSPersistentContainer(name: "MDEV1001_M2023_ICE6")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

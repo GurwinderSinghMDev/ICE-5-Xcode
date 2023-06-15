@@ -79,7 +79,7 @@ class AddEditViewController: UIViewController
             movie.year = Int16(yearTextField.text ?? "") ?? 0
             movie.shortdescription = descriptionTextView.text
             movie.mparating = mpaRatingTextField.text
-            movie.criticsrating = Float(criticsRatingTextField.text ?? "") ?? 0.0
+            movie.criticsrating = Double(criticsRatingTextField.text ?? "") ?? 0.0
         } else {
             // Creating a new movie
             let newMovie = Movie(context: context)
@@ -93,7 +93,7 @@ class AddEditViewController: UIViewController
             newMovie.year = Int16(yearTextField.text ?? "") ?? 0
             newMovie.shortdescription = descriptionTextView.text
             newMovie.mparating = mpaRatingTextField.text
-            newMovie.criticsrating = Float(criticsRatingTextField.text ?? "") ?? 0.0
+            newMovie.criticsrating = Double(criticsRatingTextField.text ?? "") ?? 0.0
         }
 
         // Save the changes in the context
@@ -104,6 +104,7 @@ class AddEditViewController: UIViewController
         } catch {
             print("Failed to save data: \(error)")
         }
+        
     }
     
 }
